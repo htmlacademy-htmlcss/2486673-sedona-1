@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Егор Авдощенко](https://up.htmlacademy.ru/htmlcss-individual/1/user/2486673).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Гущина](https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 
