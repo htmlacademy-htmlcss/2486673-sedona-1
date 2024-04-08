@@ -15,17 +15,31 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
-
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   background-color: #f2f2f2;
   color: #000000;
 }
 
+.page-header {
+  background-color: #ffffff;
+}
+
+.main-index {
+  background-color: #ffffff;
+}
+
+.main-inner {
+  background-color: #ffffff;
+}
+
 .button {
   font-family: inherit;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   background-color:#756157;
   color: #ffffff;
   text-decoration: none;
@@ -33,13 +47,14 @@ body {
   text-transform: uppercase;
 }
 
-.page-header {
-  background-color: #ffffff;
-}
-
 /*Navigation*/
 
+.navigation-list {
+  list-style: none;
+}
+
 .navigation-link {
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
@@ -49,6 +64,29 @@ body {
 
 .navigation-link-current{
   text-decoration: underline;
+}
+
+.value-favorite {
+font-size: 10px;
+line-height: 10px;
+text-align: center;
+background-color: #7db54f;
+color: #FFFFFF;
+}
+
+/* Filter */
+
+.main-inner-title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.filter {
+  background-image: url(../images/filter-background.jpg);
+  background-color: #745b54;
+  color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 /*Advantages*/
@@ -64,6 +102,10 @@ body {
 .advantages-main-description {
   text-align: center;
   color: #333333;
+}
+
+.advantages-list {
+  list-style: none;
 }
 
 .advantages-item {
@@ -113,12 +155,31 @@ body {
   color: #333333;
 }
 
+.service-list {
+  list-style: none;
+}
+
 .service-item {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .service-item:nth-child(2) {
   background-color:#ffffff;
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
 }
 
 /* hotel-search */
@@ -140,12 +201,14 @@ body {
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
-display: flex;
 align-items: center;
 }
 
 /* Footer */
 
+.page-footer {
+  background-color: #ffffff;
+}
 
 .footer-subscribe-title {
   font-weight: 700;
@@ -165,7 +228,6 @@ align-items: center;
   background-image: url(../images/subscribe-background.jpg);
   background-color: #3f668e;
   color: #ffffff;
-  display: flex;
   background-repeat: no-repeat;
 }
 
@@ -180,6 +242,16 @@ align-items: center;
   line-height: 36px;
   background-color: #82B3D3;
   color: #FFFFFF;
+}
+
+/* footer-social */
+
+.footer-social-list {
+  list-style: none;
+}
+
+.social-button {
+  background-color: transparent;
 }
 
 /* footer-contacts */
