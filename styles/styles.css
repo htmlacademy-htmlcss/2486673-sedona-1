@@ -82,8 +82,8 @@ body {
   color: #FFFFFF;
 }
 
-.filter {
-  background-image: url(../images/filter-background.jpg);
+.catalog-filter-decoration {
+  background-image: url("../images/filter-background.jpg");
   background-color: #745b54;
   background-size: 100% auto;
   color: #ffffff;
@@ -101,7 +101,7 @@ body {
 }
 
 .breadcrumbs-link-home {
-  background-image: url(../images/breadcrumbs-home.svg);
+  background-image: url("../images/breadcrumbs-home.svg");
   background-repeat: no-repeat;
 }
 
@@ -132,6 +132,8 @@ body {
   background-color: transparent;
   color: #FFFFFF;
 }
+
+
 
 /* Catalog searching-results*/
 
@@ -358,15 +360,15 @@ background-color: #82B3D3;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  }
+}
 
   .footer-subscribe-description {
   color: #000000;
   text-align: center;
-  }
+}
 
 .footer-main {
-  background-image: url(../images/subscribe-background.jpg);
+  background-image: url("../images/subscribe-background.jpg");
   background-color: #3f668e;
   background-size: 100% auto;
   color: #ffffff;
