@@ -40,7 +40,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
 .page-header {
@@ -143,12 +142,15 @@ body {
 /* Filter catalog */
 
 .main-inner-title {
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 70px;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
 }
 
-.catalog-filter-decoration {
+.catalog-filter-container {
   background-image: url("../images/filter-background.jpg");
   background-color: #745b54;
   background-size: 100% auto;
@@ -169,6 +171,12 @@ body {
 .breadcrumbs-link-home {
   background-image: url("../images/breadcrumbs-home.svg");
   background-repeat: no-repeat;
+}
+
+.catalog-filter {
+  display: flex;
+  margin: 70px;
+  margin-top: 40px;
 }
 
 .catalog-filter-list {
@@ -201,17 +209,30 @@ body {
 
 /* Catalog searching-results*/
 
+/* задает размер блока каталога, раскомментить после выставления отступов карточек
+.searching-results {
+  width: 1060px;
+} */
+
+.searching-results-filter-container {
+  display: flex;
+  margin: 50px 70px 40px 70px;
+  justify-content: space-between;
+}
+
 .searching-results-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: auto;
 }
 
 .searching-results-filter {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-right: 70px;
 }
 
 .searching-results-view {
@@ -219,7 +240,18 @@ body {
 }
 
 .searching-results-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 70px;
+  padding: 0;
   list-style: none;
+}
+
+.searching-results-item {
+  width: 340px;
+  min-height: 438px;
+  padding: 0;
+  margin: 0;
 }
 
 .searching-results-link {
@@ -263,6 +295,10 @@ background-color:#F2F2F2;
 }
 
 .pagination-list {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  padding-left: 70px;
   list-style: none;
 }
 
@@ -398,6 +434,12 @@ background-color: #82B3D3;
 
 /* hotel-search */
 
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 304px;
+}
+
 .hotel-search-title {
   font-weight: 700;
   font-size: 30px;
@@ -450,17 +492,25 @@ background-color: #82B3D3;
 }
 
 .footer-main {
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/subscribe-background.jpg");
   background-color: #3f668e;
   background-size: 100% auto;
   color: #ffffff;
   background-repeat: no-repeat;
   height: 415px;
+  padding: 96px 258px 104px 258px;
 }
 
 .footer-subscribe {
   background-image: none;
   background-color: #ffffff;
+}
+
+.footer-subscribe-form {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-subscribe-button {
@@ -475,6 +525,8 @@ background-color: #82B3D3;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
+  min-height: 120px;
 }
 
 /* footer-social */
