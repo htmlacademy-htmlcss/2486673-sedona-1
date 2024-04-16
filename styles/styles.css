@@ -37,9 +37,9 @@ body {
 .main-container {
   width: 1200px;
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-header {
@@ -466,6 +466,18 @@ background-color: #82B3D3;
   background-color: #ffffff;
 }
 
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/subscribe-background.jpg");
+  background-color: #3f668e;
+  background-size: 100% auto;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  height: 415px;
+  padding: 96px 258px 104px 258px;
+}
+
 .footer-main-title {
   font-weight: 700;
   font-size: 30px;
@@ -480,7 +492,15 @@ background-color: #82B3D3;
   color:#ffffff;
 }
 
+.footer-subscribe {
+  background-image: none;
+  background-color: #ffffff;
+}
+
 .footer-subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -489,23 +509,6 @@ background-color: #82B3D3;
 .footer-subscribe-description {
   color: #000000;
   text-align: center;
-}
-
-.footer-main {
-  display: flex;
-  flex-direction: column;
-  background-image: url("../images/subscribe-background.jpg");
-  background-color: #3f668e;
-  background-size: 100% auto;
-  color: #ffffff;
-  background-repeat: no-repeat;
-  height: 415px;
-  padding: 96px 258px 104px 258px;
-}
-
-.footer-subscribe {
-  background-image: none;
-  background-color: #ffffff;
 }
 
 .footer-subscribe-form {
