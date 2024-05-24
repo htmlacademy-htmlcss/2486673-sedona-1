@@ -222,6 +222,11 @@ body {
   color: inherit;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #615048;
+}
+
 .navigation-user-link {
   position: relative;
   display: block;
@@ -254,14 +259,14 @@ body {
   padding: 5px 4px;
 }
 
-.navigation-user-item:nth-child(1) .navigation-user-link {
-  background-image: url("/images/search.svg");
+.navigation-user-search {
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user-item:nth-child(2) .navigation-user-link {
-  background-image: url("/images/favorites.svg");
+.navigation-user-favorite {
+  background-image: url("../images/favorites.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -300,7 +305,7 @@ body {
   bottom: 0;
   right: 0;
   height: 57px;
-  background-image: url("/images/divider.svg");
+  background-image: url("../images/divider.svg");
 }
 
 .hero-background-image {
@@ -431,6 +436,8 @@ body {
 }
 
 .catalog-filter-item {
+  position: relative;
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -440,6 +447,145 @@ body {
 
 .catalog-filter-item:last-child {
   margin-bottom: 0;
+}
+
+.checkbox-mark {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control {
+  padding-left: 36px;
+}
+
+.control:hover {
+  opacity: 60%;
+}
+
+.control:active {
+  opacity: 30%;
+}
+
+.control-input[type="checkbox"]:checked ~ .checkbox-mark  {
+  background-image: url("../images/tick-checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="checkbox"]:focus + .checkbox-mark {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.control-radio::before {
+  position: absolute;
+  content: "";
+  bottom: 1px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.control-input[type="radio"]:checked ~ .control-radio::after {
+  position: absolute;
+  content: "";
+  bottom: 6px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3f5e72;
+}
+
+.control-input[type="radio"]:focus + .control-radio::before {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.catalog-range-container {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 104px;
+  justify-content: space-between;
+}
+
+.range-input-container {
+  display: flex;
+  gap: 2px;
+}
+
+.range-input {
+  font: inherit;
+  font-weight: 700;
+  width: 143px;
+  min-height: 48px;
+  border: none;
+  padding: 12px 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label:last-child .range-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label {
+  position: relative;
+}
+
+.input-text {
+  position: absolute;
+  width: 18px;
+  height: 24px;
+  left: 106px;
+  top: 12px;
+  color: #000000;
+  opacity: 30%;
+}
+
+.range-scale-container {
+  position: relative;
+  height: 4px;
+  margin-bottom: 8px;
+  background-color: #6e7577;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color:  #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left 0;
+}
+
+.toggle-max {
+  top: -8px;
+  left: 191px;
 }
 
 .filter-button-container {
@@ -461,12 +607,6 @@ body {
   background-color: transparent;
   color: #ffffff;
   border: none;
-}
-
-.temporary-form {
-  width: 288px;
-  height: 160px;
-  border: 1px solid #fffdfc;
 }
 
 /* Catalog searching-results*/
@@ -504,7 +644,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
-  background-image: url("/images/filter-arrow.svg");
+  background-image: url("../images/filter-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -541,7 +681,6 @@ body {
   justify-content: space-evenly;
   padding: 17px 16px;
   background-color: #ffffff;
-  background-image: url("/images/table-view.svg");
   background-repeat: no-repeat;
   background-position: center center;
   width: 48px;
@@ -562,14 +701,16 @@ body {
   border: 2px solid #000000;
 }
 
-.searching-results-view-item:nth-child(2)
-.searching-results-view-button {
-  background-image: url("/images/slideshow-view.svg");
+.results-view-table .searching-results-view-button {
+  background-image: url("../images/table-view.svg");
 }
 
-.searching-results-view-item:nth-child(3)
-.searching-results-view-button {
-  background-image: url("/images/list-view.svg");
+.results-view-slideshow .searching-results-view-button {
+  background-image: url("../images/slideshow-view.svg");
+}
+
+.results-view-list .searching-results-view-button {
+  background-image: url("../images/list-view.svg");
 }
 
 /* Cards list */
@@ -865,29 +1006,26 @@ body {
   margin: 0;
 }
 
-.service-content-container {
-  padding: 81px 85px;
-  background-image: url("/images/housing-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center 82px;
-}
-
-.service-item:nth-child(2) .service-content-container {
-  background-image: url("/images/food-icon.svg");
-}
-
-.service-item:nth-child(3) .service-content-container {
-  background-image: url("/images/souvenirs-icon.svg");
-}
-
 .service-item {
   width: 400px;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.service-item:nth-child(2) {
+.service-content-container {
+  padding: 81px 85px;
+  background-image: url("../images/housing-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center 82px;
+}
+
+.service-item:nth-child(2) .service-content-container {
+  background-image: url("../images/food-icon.svg");
   background-color:#ffffff;
+}
+
+.service-item:nth-child(3) .service-content-container {
+  background-image: url("../images/souvenirs-icon.svg");
 }
 
 .service-title {
@@ -1021,7 +1159,11 @@ body {
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
   background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.6);
+  outline: none;
 }
+
+
 
 .footer-contacts {
   display: flex;
