@@ -62,22 +62,16 @@
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control">Бассейн
-                      <input id="pool-form" class="visually-hidden control-input" type="checkbox" name="infrastructure" value="pool" checked>
-                      <span class="checkbox-mark"></span>
-                    </label>
+                    <input id="pool-form" class="visually-hidden control-input" type="checkbox" name="infrastructure" value="pool" checked>
+                    <label for="pool-form" class="control control-checkbox">Бассейн </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">Парковка
-                      <input id="parking-form" class="visually-hidden control-input" type="checkbox" name="infrastructure" value="parking" checked>
-                      <span class="checkbox-mark"></span>
-                    </label>
+                    <input id="parking-form" class="visually-hidden control-input" type="checkbox" name="infrastructure" value="parking" checked>
+                    <label for="parking-form" class="control control-checkbox">Парковка</label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">Wi-Fi
-                      <input id="wifi-form" class="visually-hidden control-input" type="checkbox" name="infrastructure" value="wi-fi">
-                      <span class="checkbox-mark"></span>
-                    </label>
+                    <input id="wifi-form" class="visually-hidden control-input" type="checkbox" name="infrastructure" value="wi-fi">
+                    <label for="wifi-form" class="control control-checkbox">Wi-Fi</label>
                   </li>
                 </ul>
               </fieldset>
@@ -103,11 +97,11 @@
                 <div class="catalog-range-container">
                   <div class="range-input-container">
                     <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="0" name="min-price">
+                      <input class="range-input" type="number" placeholder="" value="0" name="min-price">
                       <span class="input-text">от</span>
                     </label>
                     <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="9000" name="max-price">
+                      <input class="range-input" type="number" placeholder="" value="9000" name="max-price">
                       <span class="input-text">до</span>
                     </label>
                   </div>
@@ -243,8 +237,8 @@
     </main>
     <footer class="page-footer">
       <section class="footer-subscribe footer-main">
-        <h2 class="footer-subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="footer-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="footer-title footer-subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="footer-description footer-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="footer-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="footer-input" type="email" name="email" placeholder="Ваш e-mail">
           <button class="button footer-subscribe-button" type="submit">Подписаться</button>
