@@ -93,6 +93,7 @@ body {
 }
 
 /* Blue buttons */
+
 .filter-button:hover,
 .filter-button:focus,
 .searching-results-favorite-button:hover,
@@ -165,10 +166,6 @@ body {
 
 /*Navigation*/
 
-.page-header-logo {
-  /* margin-right: 30px ; */
-}
-
 .logo {
   margin: 0;
   padding: 0;
@@ -229,6 +226,10 @@ body {
 .navigation-link:hover,
 .navigation-link:focus {
   color: #615048;
+}
+
+.navigation-link:active {
+  opacity: 70%;
 }
 
 .navigation-user-link {
@@ -928,7 +929,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #82b3d3;
   border-radius: 4px;
   padding: 12px;
@@ -1021,7 +1022,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-
 .advantages-title {
   position: relative;
   font-weight: 700;
@@ -1075,7 +1075,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
-
 }
 
 .service-main-description {
@@ -1621,7 +1620,7 @@ body {
   fill: #000000;
   opacity: 100%;
   border-radius: 4px;
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
 }
 
 .guests-button:focus {
@@ -1659,7 +1658,7 @@ body {
   min-height: 143px;
   background-color: #333333;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
