@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="img/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="main-container">
@@ -182,17 +182,17 @@
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-form-container">
                 <div class="modal-form-arrival">
-                  <label for="arrival" class="modal-form-label">Дата Заезда:</label>
-                  <input type="text" id="arrival" class="modal-input modal-dates-input" placeholder="Укажите дату" value="27 апреля 2020" name="arrival-date" required>
+                  <label class="modal-form-label" for="arrival">Дата Заезда:</label>
+                  <input class="modal-input modal-dates-input" type="text" id="arrival" placeholder="Укажите дату" value="27 апреля 2020" name="arrival-date" required>
                   <span class="modal-form-arrival-caption">Мы не можем отправить вас в прошлое.</span>
                 </div>
                 <div class="modal-form-departure">
-                  <label for="departure" class="modal-form-label">Дата Выезда:</label>
-                  <input type="text" id="departure" class="modal-input modal-dates-input" placeholder="Укажите дату" value="1 сентября 2023" name="departure-date" required>
+                  <label class="modal-form-label" for="departure">Дата Выезда:</label>
+                  <input class="modal-input modal-dates-input" type="text" id="departure" placeholder="Укажите дату" value="1 сентября 2023" name="departure-date" required>
                   <span class="modal-form-departure-caption">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
                 <div class="modal-form-adults">
-                  <label for="adults" class="modal-form-label">Взрослые:</label>
+                  <label class="modal-form-label" for="adults">Взрослые:</label>
                   <div class="modal-button-container">
                     <button class="modal-minus-button guests-button" type="button">
                       <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -200,7 +200,7 @@
                       </svg>
                       <span class="visually-hidden">Уменьшить количество взрослых.</span>
                     </button>
-                    <input type="number" id="adults" class="modal-input modal-guests-input" value="2" name="number-adults" required>
+                    <input class="modal-input modal-guests-input" type="number" id="adults" value="2" name="number-adults" required>
                     <button class="modal-plus-button guests-button" type="button">
                       <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                         <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
@@ -222,7 +222,7 @@
                       </svg>
                       <span class="visually-hidden">Уменьшить количество детей.</span>
                     </button>
-                    <input type="number" id="children" class="modal-input modal-guests-input" value="2" name="number-children" required>
+                    <input class="modal-input modal-guests-input" type="number" id="children" value="2" name="number-children" required>
                     <button class="modal-plus-button guests-button" type="button">
                       <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                         <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
