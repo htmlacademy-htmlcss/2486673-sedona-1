@@ -35,6 +35,11 @@ body {
   min-width: 1280px;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .main-container {
   width: 1200px;
   margin: 0 auto;
@@ -74,7 +79,7 @@ body {
   overflow: hidden;
 }
 
-/* Buttons common states*/
+/* Buttons common states */
 
 .button {
   font-family: inherit;
@@ -553,6 +558,8 @@ body {
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: 3px solid transparent;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input:hover:not(:disabled) {
@@ -579,7 +586,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -683,8 +691,10 @@ body {
 
 .searching-results-filter-container {
   display: flex;
-  margin-bottom: 38px;
+  flex-wrap: wrap;
+  margin-bottom: 39px;
   align-items: center;
+  row-gap: 10px;
 }
 
 .searching-results-title {
@@ -706,10 +716,12 @@ body {
   margin-left: auto;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-image: url("../images/filter-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
+  background-color: #ffffff;
 }
 
 .searching-results-filter:hover:not(:disabled),
@@ -797,10 +809,6 @@ body {
 }
 
 /* Hotels Cards */
-
-.searching-results-image {
-  margin: 0;
-}
 
 .searching-results-item {
   display: grid;
@@ -962,7 +970,7 @@ body {
   background-color: #f2f2f2;
 }
 
-/*Advantages*/
+/* Advantages */
 
 .advantages-container {
   padding: 69px 274px;
@@ -1061,7 +1069,7 @@ body {
   color:#ffffff;
 }
 
-/*Service*/
+/* Service */
 
 .service-container {
   padding: 64px 348px;
@@ -1183,7 +1191,7 @@ body {
   color: #ffffff;
   background-repeat: no-repeat;
   min-height: 415px;
-  padding: 97px 258px 104px 258px;
+  padding: 97px 258px 104px;
   margin-top: -2px;
 }
 
@@ -1291,7 +1299,7 @@ body {
   height: 40px;
   background-color: transparent;
   margin: 0;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 .social-button svg {
@@ -1587,7 +1595,8 @@ body {
 
 .modal-guests-input::-webkit-outer-spin-button,
 .modal-guests-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
