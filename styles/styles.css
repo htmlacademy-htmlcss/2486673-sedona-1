@@ -660,7 +660,7 @@ img {
   display: flex;
   flex-direction: column;
   padding-top: 56px;
-  justify-content: space-between;
+  gap: 32px;
 }
 
 .filter-button {
@@ -809,6 +809,7 @@ img {
 .searching-results-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto min-content min-content min-content;
   gap: 16px 20px;
   width: 340px;
   min-height: 438px;
@@ -822,6 +823,7 @@ img {
 .searching-results-link {
   text-decoration: none;
   grid-column: 1 / -1;
+  align-self: start;
 }
 
 .searching-results-image {
